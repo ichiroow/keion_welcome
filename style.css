@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    background: linear-gradient(to bottom right, #1f1c2c, #928dab);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .poster {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    border-radius: 16px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  .poster h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .date,
+  .place {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  section {
+    margin-top: 1.5rem;
+  }
+  
+  .description, .setlist, .info {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .setlist ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    text-align: left;
+  }
+  
+  .setlist li {
+    margin-bottom: 0.4rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
+  .setlist li::before {
+    content: "🎶";
+    position: absolute;
+    left: 0;
+  }
+  
+  .info p {
+    margin: 0.5rem 0 0 0;
+  }
+  
+  .sns ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+  }
+  
+  .sns li {
+    margin: 0.3rem 0;
+  }
+  
+  .sns a {
+    color: #87cefa;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .sns a:hover {
+    text-decoration: underline;
+  }
+  
+  /* モバイル対応 */
+  @media screen and (max-width: 480px) {
+    .poster h1 {
+      font-size: 1.4rem;
+    }
+  
+    .setlist li {
+      font-size: 0.95rem;
+    }
+  }
+  
